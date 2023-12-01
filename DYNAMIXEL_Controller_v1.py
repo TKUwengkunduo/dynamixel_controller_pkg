@@ -110,6 +110,10 @@ class DualMotorController(Node):
 
     def set_moving_speed(self, motor_id, speed):
         # Set moving speed for both motors
+        if speed<0:
+            speed = int((-speed/255)*1023 + 1023)
+        else:
+            speed = int((speed/255)*1023)
         print(motor_id, speed)
         self.packetHandler.write2ByteTxRx(self.portHandler, motor_id, ADDR_MX_MOVING_SPEED, speed)
     
