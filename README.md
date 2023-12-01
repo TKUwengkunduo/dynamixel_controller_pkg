@@ -15,7 +15,7 @@ sudo chmod 777 /dev/ttyUSB0
 ###### Control_Example_Single.py
 ######     - It publishes a message to a topic called motor_speed, which is used to test the control of a single motor.
 ###### Control_Example_Two.py
-######     - It publishes a message to a topic called motor_speed, which is used to test the control of the two motors.
+######     - It publishes a message to a topic called dual_motor_speed, which is used to test the control of the two motors.
 
 
 ## If you only have to control one motor
