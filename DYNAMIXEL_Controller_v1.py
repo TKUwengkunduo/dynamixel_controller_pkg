@@ -53,6 +53,10 @@ class SingleMotorController(Node):
         self.packetHandler.write1ByteTxRx(self.portHandler, DXL_ID1, ADDR_MX_TORQUE_ENABLE, TORQUE_ENABLE)
 
     def set_moving_speed(self, speed):
+        if speed<0:
+            speed = int((-speed/255)*1023 + 1023)
+        else:
+            speed = int((speed/255)*1023)
         self.packetHandler.write2ByteTxRx(self.portHandler, DXL_ID1, ADDR_MX_MOVING_SPEED, speed)
     
     def pin(self):
