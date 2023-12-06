@@ -1,8 +1,10 @@
 # dynamixel_controller_pkg
 
 ###### This package is based on ROS2 for controlling Robotis DYNAMIXEL motors.
-###### You may need the DYNAMIXEL SDK, download it from the link below.
-###### URL = https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+###### You may need the DYNAMIXEL SDK(URL = https://github.com/ROBOTIS-GIT/DynamixelSDK.git)
+```js
+dynamixel-sdk
+```
 
 ## Usb access
 ```js
